@@ -1,0 +1,1019 @@
+
+/*FONTS*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: 'latoblack';
+  src: url('../fonts/lato/lato-black_0-webfont.eot');
+  src: url('../fonts/lato/lato-black_0-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/lato-black_0-webfont.woff2') format('woff2'),
+    url('../fonts/lato/lato-black_0-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-black_0-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-black_0-webfont.svg#latoblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latobold';
+  src: url('../fonts/lato/lato-bold_0-webfont.eot');
+  src: url('../fonts/lato/lato-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/lato-bold_0-webfont.woff2') format('woff2'),
+    url('../fonts/lato/lato-bold_0-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-bold_0-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-bold_0-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latolight';
+  src: url('../fonts/lato/lato-light-webfont.eot');
+  src: url('../fonts/lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/lato-light-webfont.woff2') format('woff2'),
+    url('../fonts/lato/lato-light-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-light-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-light-webfont.svg#latolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'latoregular';
+  src: url('../fonts/lato/lato-regular_0-webfont.eot');
+  src: url('../fonts/lato/lato-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/lato-regular_0-webfont.woff2') format('woff2'),
+    url('../fonts/lato/lato-regular_0-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-regular_0-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-regular_0-webfont.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'kelson_sansregular';
+  src: url('../fonts/kelson/kelson_sans_regular-webfont.eot');
+  src: url('../fonts/kelson/kelson_sans_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/kelson/kelson_sans_regular-webfont.woff2') format('woff2'),
+    url('../fonts/kelson/kelson_sans_regular-webfont.woff') format('woff'),
+    url('../fonts/kelson/kelson_sans_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'kelson_sans_ruregular';
+  src: url('../fonts/kelson/kelson_sans_regular_ru_0-webfont.eot');
+  src: url('../fonts/kelson/kelson_sans_regular_ru_0-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/kelson/kelson_sans_regular_ru_0-webfont.woff2') format('woff2'),
+    url('../fonts/kelson/kelson_sans_regular_ru_0-webfont.woff') format('woff'),
+    url('../fonts/kelson/kelson_sans_regular_ru_0-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'kelson_sanslight';
+  src: url('../fonts/kelson/kelson_sans_light-webfont.eot');
+  src: url('../fonts/kelson/kelson_sans_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/kelson/kelson_sans_light-webfont.woff2') format('woff2'),
+    url('../fonts/kelson/kelson_sans_light-webfont.woff') format('woff'),
+    url('../fonts/kelson/kelson_sans_light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'kelson_sans_rulight';
+  src: url('../fonts/kelson/kelson_sans_light_ru_0-webfont.eot');
+  src: url('../fonts/kelson/kelson_sans_light_ru_0-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/kelson/kelson_sans_light_ru_0-webfont.woff2') format('woff2'),
+    url('../fonts/kelson/kelson_sans_light_ru_0-webfont.woff') format('woff'),
+    url('../fonts/kelson/kelson_sans_light_ru_0-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'kelson_sansbold';
+  src: url('../fonts/kelson/kelson_sans_bold-webfont.eot');
+  src: url('../fonts/kelson/kelson_sans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/kelson/kelson_sans_bold-webfont.woff2') format('woff2'),
+    url('../fonts/kelson/kelson_sans_bold-webfont.woff') format('woff'),
+    url('../fonts/kelson/kelson_sans_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'kelson_sans_rubold';
+  src: url('../fonts/kelson/kelson_sans_bold_ru_0-webfont.eot');
+  src: url('../fonts/kelson/kelson_sans_bold_ru_0-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/kelson/kelson_sans_bold_ru_0-webfont.woff2') format('woff2'),
+    url('../fonts/kelson/kelson_sans_bold_ru_0-webfont.woff') format('woff'),
+    url('../fonts/kelson/kelson_sans_bold_ru_0-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'pushkin_regular';
+  src: url('../fonts/pushkin/Pushkin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'bookman_regular';
+  src: url('../fonts/bookman/BOOKOS.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bookman_bold';
+  src: url('../fonts/bookman/BOOKOSB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'bookman_bolditalic';
+  src: url('../fonts/bookman/BOOKOSBI.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bookman_italic';
+  src: url('../fonts/bookman/BOOKOSI.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*STYLE*/
+
+.contacts{
+  position: relative;
+}
+
+
+.page-header {
+  background-color: #222;
+  padding: 30px 0;
+}
+
+.header-contant {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phone-btn {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'kelson_sans_ruregular', sans-serif;
+  font-size: 28px;
+  position: relative;
+  padding-top: 15px;
+  padding-left: 55px;
+}
+
+.phone-btn:before {
+  content: '';
+  background-image: url(../img/phone.png);
+  width: 46px;
+  height: 37px;
+  position: absolute;
+  right: 215px;
+  bottom: 1px;
+}
+
+.promo {
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 580px;
+}
+
+.promo h1 {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'kelson_sans_rubold', sans-serif;
+  color: #fef5f5;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.promo p {
+  color: #fef5f5;
+  font-family: 'kelson_sans_ruregular', sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  line-height:50px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.promo-btn {
+  color: #fadeca;
+  text-decoration: none;
+  font-family: 'latoblack', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  display: inline-block;
+  background-color: #e79d59;
+  padding: 15px 45px;
+  border-radius: 15px;
+  border: 3px solid #fadeca;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  transition: 2s ease;
+}
+
+.promo-btn:hover {
+  color: #e79d59;
+  background-color: #fadeca;
+  border: 3px solid #e79d59;
+}
+
+/*ARROWS*/
+
+$ani-speed: 2s;
+$ani-delay: 1s;
+
+.arrow-btn {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.arrow {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-1 {
+  animation: arrow-movement $ani-speed ease-in-out infinite;
+}
+.arrow-2 {
+  animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: #e79d59;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+
+.arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+
+.arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+// Animation
+@keyframes arrow-movement {
+  0%   {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*ARROWS*/
+
+.about {
+  text-align: center;
+}
+
+.about-title {
+  font-family: 'bookman_regular', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #683926;
+  font-weight: 300;
+  padding: 10px 10px;
+}
+
+.about-text {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 18px;
+  padding: 10px 5px;
+  color: #222;
+}
+
+.features {
+  padding: 10px;
+  text-align: left;
+}
+
+.features-item {
+  list-style-type: none;
+  padding: 10px 35px 10px 70px;
+  font-family: 'Bookman Old Style', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 25px;
+  color: #683926;
+  position: relative;
+}
+
+.features-item:before {
+  content: '1';
+  font-family: 'kelson_sans_rubold', sans-serif;
+  font-size: 18px;
+  color: #e79d59;
+  position: absolute;
+  left: 15px;
+  border: 3px solid #e79d59;
+  border-radius: 25px;
+  padding: 0 7px;
+  top: 10px;
+}
+
+.features-item:nth-child(1):before {
+  padding: 0 8px;
+}
+
+.features-item:nth-child(2):before {
+  content: '2';
+}
+
+.features-item:nth-child(3):before {
+  content: '3';
+}
+
+.features-item:nth-child(4):before {
+  content: '4';
+}
+
+.features-item:nth-child(5):before {
+  content: '5';
+}
+
+.features-item:nth-child(6):before {
+  content: '6';
+}
+
+.features-item:nth-child(7):before {
+  content: '7';
+  padding: 0 8px;
+}
+
+.ask-question {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'latoblack', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #e79d59;
+  padding: 15px 35px;
+  border-radius: 15px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  transition: 2s ease;
+  border: 3px solid #fff;
+  margin-bottom: 20px;
+}
+
+.ask-question:hover {
+  color: #e79d59;
+  background-color: #fff;
+  border: 3px solid #e79d59;
+}
+
+.consult-bg {
+  background-color: #fdf7f2;
+  box-sizing: border-box;
+}
+
+.consult-text {
+  padding-top: 20px;
+}
+
+.price-text {
+  font-size: 35px;
+  font-family: 'latoregular', sans-serif;
+  color: #222;
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+.price {
+  font-size: 35px;
+  padding-top: 5px;
+  padding-left: 100px;
+  font-family: 'kelson_sans_rubold', sans-serif;
+  color: #d79652;
+  margin-top: 0;
+  position: relative;
+}
+
+.price:after {
+  content: '';
+  background-image: url(../img/rub.png);
+  width: 33px;
+  height: 36px;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
+
+.psycologist-block {
+  padding: 20px 0 15px;
+}
+
+.consult-img {
+  display: none;
+}
+
+.consult-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.consult {
+  padding: 7px 10px;
+}
+
+.psycologist-photo {
+  display: none;
+}
+
+.text-block p,
+.practice p{
+  margin: 0;
+  font-family: 'latoregular', sans-serif;
+  font-size: 14px;
+  color: #332a2a;
+  line-height: 18px;
+  text-align: center;
+}
+
+.psycologist {
+  font-family: 'pushkin_regular', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  margin: 15px 0;
+  color: #402d95;
+}
+
+.psychoanalysis {
+  text-align: center;
+  background-color: #fdf7f2;
+  padding: 15px 0;
+}
+
+.psychoanalysis-title {
+  font-family: 'kelson_sansbold', sans-serif;
+  -moz-transform: matrix( 1.00046829488152,0,0,1.00083311126363,0,0);
+  -webkit-transform: matrix( 1.00046829488152,0,0,1.00083311126363,0,0);
+  -ms-transform: matrix( 1.00046829488152,0,0,1.00083311126363,0,0);
+  font-size: 20px;
+  color: #322222;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.psychoanalysis-item {
+  text-align: left;
+  list-style-type: none;
+  padding: 15px 0 15px 80px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 14px;
+  color: #8e8d8c;
+  position: relative;
+}
+
+.psychoanalysis-item:before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/ethic.png);
+  width: 39px;
+  height: 39px;
+  left: 10px;
+  top: 5px;
+}
+
+.psychoanalysis-item:nth-child(2):before{
+  background-image: url(../img/capabilities.png);
+  width: 69px;
+  height: 15px;
+  top: 19px;
+  left: 0;
+}
+
+.psychoanalysis-item:nth-child(3):before{
+  background-image: url(../img/approach.png);
+  width: 57px;
+  height: 36px;
+  top: 7px;
+  left: 5px;
+}
+
+.psychoanalysis-item:nth-child(4):before{
+  background-image: url(../img/privacy.png);
+  width: 38px;
+  height: 35px;
+  top: 12px;
+  left: 17px;
+}
+
+.psychoanalysis-item:nth-child(5):before{
+  background-image: url(../img/schedule.png);
+  width: 34px;
+  height: 35px;
+  top: 12px;
+  left: 20px;
+}
+
+.psychoanalysis-item:nth-child(6):before{
+  background-image: url(../img/time.png);
+  width: 34px;
+  height: 34px;
+  top: 20px;
+  left: 20px;
+}
+
+.psychoanalysis-item:nth-child(7):before{
+  background-image: url(../img/smile.png);
+  width: 35px;
+  height: 34px;
+  top: 7px;
+  left: 20px;
+}
+
+.psychoanalysis-list {
+  padding: 0 10px;
+}
+
+.practice {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.practice p {
+  text-align: left;
+}
+
+#map {
+  width: 100%;
+  height: 480px;
+}
+
+.form {
+  width: 100%;
+  top: 15px;
+}
+
+.order_form {
+  background-color: #222;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  min-width: 300px;
+}
+
+.order_form img {
+  display: none;
+}
+
+.logo_footer {
+  padding-bottom: 20px;
+}
+
+.form_contact {
+  color: #cf8e53;
+  font-size: 16px;
+  font-family: 'latolight', sans-serif;
+  line-height: 9px;
+}
+
+.form_contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.form_text {
+  font-size: 15px;
+  color: #736a6a;
+  font-family: 'latolight', sans-serif;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.form-item {
+  color: #cf8e53;
+  font-size: 16px;
+  font-family: 'latolight', sans-serif;
+  line-height: 30px;
+}
+
+.footer-form {
+  text-align: center;
+  margin: 0 30px;
+}
+
+.form-item_input {
+  background-color: transparent;
+  border: 1px solid #7a583d;
+  float: right;
+  margin-right: 22px;
+  width: 50%;
+  height: 25px;
+  outline: none;
+}
+
+.form-item_input:focus,
+.form-item_input-time:focus {
+  border: 1px solid #e79d59;
+}
+
+.form-item_input-time {
+  background-color: transparent;
+  border: 1px solid #7a583d;
+  width: 55px;
+  height: 25px;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #cf8e53;
+  text-align: center;
+}
+
+.form-btn {
+  font-family: 'latoblack', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #cf8e53;
+  border: none;
+  text-align: center;
+  width: 94%;
+  padding: 15px 0;
+  border-radius: 15px;
+  transition: 2s ease;
+  margin-top: 20px;
+}
+
+.form-btn:hover {
+  background-color: #fff;
+  color: #cf8e53;
+}
+
+@media (min-width: 768px) {
+
+  .header-contant {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .phone-btn {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .promo h1 {
+    font-size: 72px;
+  }
+
+  .promo p {
+    font-size: 38px;
+    line-height: 60px;
+  }
+
+  .promo-btn {
+    font-size: 22px;
+    margin-top: 40px;
+    padding: 20px 60px;
+    border-radius: 15px;
+  }
+
+  .about-title {
+    font-size: 22px;
+    padding: 10px 30px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    padding: 10px 50px;
+  }
+
+  .features {
+    padding-left: 150px;
+    padding-right: 100px;
+  }
+
+  .features-item  {
+    font-size: 20px;
+    padding: 14px 70px;
+  }
+
+  .ask-question {
+    font-size: 22px;
+    margin-top: 40px;
+    padding: 20px 60px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+
+  .consult-img {
+    display: block;
+    width: 50%;
+    float: right;
+    padding-bottom: 30px;
+  }
+
+  .consult {
+    padding: 20px 40px;
+  }
+
+  .consult-text {
+    width: 50%;
+    float: left;
+    padding-top: 110px;
+  }
+
+  .price:before {
+    content: '_____';
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #222;
+    position: absolute;
+    left: 70px;
+    top: 0;
+  }
+
+  .price {
+    padding-left: 180px;
+  }
+
+  .psycologist-photo {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .psycologist-block {
+    padding: 35px 0 25px;
+  }
+
+  .text-block p,
+  .practice p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .text-margin {
+    text-indent: 20px;
+  }
+
+  .psycologist {
+    font-size: 35px;
+    margin: 35px 0;
+    text-align: right;
+  }
+
+  .col-sm-7 {
+    -ms-flex-preferred-size: 58.333%;
+    -webkit-flex-basis: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+    box-sizing: border-box;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .psychoanalysis {
+    text-align: center;
+    background-color: #fdf7f2;
+    padding: 50px 0;
+  }
+
+  .psychoanalysis-title {
+    font-size: 22px;
+  }
+
+  .psychoanalysis-list {
+    padding: 0 20px 0 160px;
+  }
+
+  .psychoanalysis-item {
+    text-align: left;
+    list-style-type: none;
+    padding: 15px 100px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 18px;
+    color: #8e8d8c;
+    position: relative;
+  }
+
+  .psychoanalysis-item:nth-child(4):before{
+    background-image: url(../img/privacy.png);
+    width: 38px;
+    height: 35px;
+    top: 7px;
+    left: 17px;
+  }
+
+  .psychoanalysis-item:nth-child(5):before{
+    background-image: url(../img/schedule.png);
+    width: 34px;
+    height: 35px;
+    top: 7px;
+    left: 20px;
+  }
+
+  .practice {
+    text-align: center;
+    padding: 30px 0 15px;
+  }
+
+  #map {
+    width: 80%;
+    height: 530px;
+    float: right;
+    z-index: 1;
+    position: relative;
+  }
+
+  .form {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 15px;
+  }
+
+  .col-sm-6 {
+    -ms-flex-preferred-size: 50%;
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .order_form {
+    padding: 10px;
+  }
+
+  .order_form img {
+    display: block;
+  }
+
+  .form_contact {
+    font-size: 20px;
+  }
+
+  .footer-form {
+    text-align: center;
+    margin: 0;
+  }
+
+  .form-item_input {
+    width: 70%;
+  }
+
+  .form-btn {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .promo h1 {
+    font-size: 90px;
+  }
+
+  .promo p {
+    font-size: 48px;
+    line-height:70px;
+  }
+
+  .about-title {
+    font-size: 26px;
+    padding: 10px 150px;
+  }
+
+  .about-text {
+    font-size: 30px;
+    padding: 10px 180px;
+  }
+
+  .features {
+    padding-left: 270px;
+    padding-right: 180px;
+  }
+
+  .consult-img {
+    width: 65%;
+    padding-bottom: 50px;
+  }
+
+  .consult-text {
+    width: 35%;
+    padding-top: 110px;
+  }
+
+    .consult {
+    padding: 50px 100px;
+  }
+
+  .price:before {
+
+    font-size: 28px;
+    left: 70px;
+    top: 10px;
+  }
+
+  .psycologist-block {
+      padding: 80px 0 55px;
+  }
+
+  .psychoanalysis-title {
+    font-size: 34px;
+  }
+
+  .psychoanalysis-list {
+    padding: 0 200px 0 280px;
+  }
+
+  .practice {
+    text-align: center;
+    padding: 70px 0 30px;
+  }
+
+  #map {
+    height: 670px;
+  }
+
+  .order_form {
+    padding: 60px 16.667%;
+  }
+
+  .footer-form {
+    text-align: left;
+  }
+}
+
