@@ -379,6 +379,11 @@ input {
   bottom: 1px;
 }
 
+.display-none {
+  font-size: 0;
+  display: none;
+}
+
 /*PROMO*/
 
 .promo {
@@ -390,6 +395,11 @@ input {
   text-align: center;
   vertical-align: middle;
   min-height: 580px;
+  position: relative;
+}
+
+.arrow-btn {
+bottom: 50px;
 }
 
 .promo h1 {
@@ -436,29 +446,25 @@ input {
 
 /*ARROWS*/
 
-$ani-speed: 2s;
-$ani-delay: 1s;
-
-.arrow-btn {
-  height: 50px;
-  width: 50px;
-  position: relative;
-}
-
 .arrow {
   opacity: 0;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform-origin: 50% 50%;
-  transform: translate3d(-50%, -50%, 0);
+  left: calc(49% - 3px);
+  top: 96%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 
 .arrow-1 {
-  animation: arrow-movement $ani-speed ease-in-out infinite;
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+          animation: arrow-movement 2s ease-in-out infinite;
 }
+
 .arrow-2 {
-  animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
+  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+          animation: arrow-movement 2s 1s ease-in-out infinite;
 }
 
 .arrow:before,
@@ -474,20 +480,36 @@ $ani-delay: 1s;
 }
 
 .arrow:before {
-  transform: rotate(45deg) translateX(-23%);
-  transform-origin: top left;
+  -webkit-transform: rotate(45deg) translateX(-23%);
+          transform: rotate(45deg) translateX(-23%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 
 .arrow:after {
-  transform: rotate(-45deg) translateX(23%);
-  transform-origin: top right;
+  -webkit-transform: rotate(-45deg) translateX(23%);
+          transform: rotate(-45deg) translateX(23%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
-// Animation
-@keyframes arrow-movement {
-  0%   {
+@-webkit-keyframes arrow-movement {
+  0% {
     opacity: 0;
-    top: 45%;
+    top: 90%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 90%;
   }
   70% {
     opacity: 1;
@@ -711,58 +733,50 @@ $ani-delay: 1s;
   position: relative;
 }
 
-.psychoanalysis-item:before {
+.psychoanalysis-item img{
   position: absolute;
-  content: '';
-  background-image: url(../img/ethic.png);
   width: 39px;
   height: 39px;
   left: 10px;
   top: 5px;
 }
 
-.psychoanalysis-item:nth-child(2):before{
-  background-image: url(../img/capabilities.png);
+.psychoanalysis-item:nth-child(2) img{
   width: 69px;
   height: 15px;
   top: 19px;
   left: 0;
 }
 
-.psychoanalysis-item:nth-child(3):before{
-  background-image: url(../img/approach.png);
+.psychoanalysis-item:nth-child(3) img {
   width: 57px;
   height: 36px;
   top: 7px;
   left: 5px;
 }
 
-.psychoanalysis-item:nth-child(4):before{
-  background-image: url(../img/privacy.png);
+.psychoanalysis-item:nth-child(4) img{
   width: 38px;
   height: 35px;
   top: 12px;
   left: 17px;
 }
 
-.psychoanalysis-item:nth-child(5):before{
-  background-image: url(../img/schedule.png);
+.psychoanalysis-item:nth-child(5) img{
   width: 34px;
   height: 35px;
   top: 12px;
   left: 20px;
 }
 
-.psychoanalysis-item:nth-child(6):before{
-  background-image: url(../img/time.png);
+.psychoanalysis-item:nth-child(6) img{
   width: 34px;
   height: 34px;
   top: 20px;
   left: 20px;
 }
 
-.psychoanalysis-item:nth-child(7):before{
-  background-image: url(../img/smile.png);
+.psychoanalysis-item:nth-child(7) img{
   width: 35px;
   height: 34px;
   top: 7px;
@@ -920,6 +934,12 @@ $ani-delay: 1s;
     padding: 20px 60px;
     border-radius: 15px;
   }
+
+  .arrow {
+    opacity: 0;
+    position: absolute;
+    left: 49%;
+}
 
   .about-title {
     font-size: 22px;
@@ -1131,6 +1151,9 @@ $ani-delay: 1s;
     font-size: 48px;
     line-height:70px;
   }
+  .arrow {
+    left: calc(49% + 6px);
+  }
 
   .about-title {
     font-size: 26px;
@@ -1162,10 +1185,9 @@ $ani-delay: 1s;
   }
 
   .price:before {
-
     font-size: 28px;
     left: 70px;
-    top: 10px;
+    top: 0;
   }
 
   .psycologist-block {

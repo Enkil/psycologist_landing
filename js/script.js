@@ -54,3 +54,37 @@ var wow = new WOW(
 );
 
 new WOW().init();
+
+var myString = "Психоаналитическая терапия это эффективная, " +
+            " постоянно совершенствующаяся практика позволяющая познать " +
+            "и изменить себя ";
+
+var myArray = myString.split(""),
+        loopTimer,
+        setToday;
+
+setToday = document.getElementById('newTime').outerHTML = "(" + getFormattedDate() + ")";
+
+function frameLooper() {
+    if (myArray.length > 0) {
+        document.getElementById('myTypingText').innerHTML += myArray.shift();
+    } else {
+        clearTimeout(loopTimer);
+    }
+    loopTimer = setTimeout('frameLooper()', 70);
+}
+
+frameLooper();
+
+function getFormattedDate() {
+  var date = new Date();
+
+  var str = date.getFullYear() + "-" +
+          (date.getMonth() + 1) + "-" +
+          date.getDate() + " " +
+          date.getHours() + ":" +
+          date.getMinutes() + ":" +
+          date.getSeconds();
+
+  return str;
+}
