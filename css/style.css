@@ -141,9 +141,9 @@ body {
   font-family: 'pushkin';
   src: url('../fonts/pushkin/Pushkin.ttf') format('truetype');
   src: url('../fonts/pushkin/pushkin-webfont.eot') format('embedded-opentype'),
-    url('../fonts/kelson/kelson_sans_bold-webfont.woff2') format('woff2'),
-    url('../fonts/kelson/kelson_sans_bold-webfont.woff') format('woff'),
-    url('../fonts/kelson/kelson_sans_bold-webfont.ttf') format('truetype');
+    url('../fonts/pushkin/pushkin-webfont.woff2') format('woff2'),
+    url('../fonts/pushkin/pushkin-webfont.woff') format('woff'),
+    url('../fonts/pushkin/pushkin-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
