@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
 body {
   background-color: #fff;
+  margin: 0;
 }
 
 @font-face {
@@ -167,6 +174,167 @@ body {
   font-style: normal;
 }
 
+/*FLEXGRID*/
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1200px;
+}
+
+.row {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 100%;
+}
+
+.col-xs,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  box-sizing: border-box;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5 {
+  -ms-flex-preferred-size: 41.667%;
+  -webkit-flex-basis: 41.667%;
+  flex-basis: 41.667%;
+  max-width: 41.667%;
+}
+
+.col-xs-6 {
+  -ms-flex-preferred-size: 50%;
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  -ms-flex-preferred-size: 58.333%;
+  -webkit-flex-basis: 58.333%;
+  flex-basis: 58.333%;
+  max-width: 58.333%;
+}
+
+.col-xs-12 {
+  -ms-flex-preferred-size: 100%;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+/*NORMALIZE*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+img {
+  border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
 
 /*STYLE*/
 
@@ -174,6 +342,7 @@ body {
   position: relative;
 }
 
+/*HEADER*/
 
 .page-header {
   background-color: #222;
@@ -209,6 +378,8 @@ body {
   right: 215px;
   bottom: 1px;
 }
+
+/*PROMO*/
 
 .promo {
   background-image: url(../img/header_bg.jpg);
@@ -326,7 +497,7 @@ $ani-delay: 1s;
   }
 }
 
-/*ARROWS*/
+/*ABOUT*/
 
 .about {
   text-align: center;
@@ -430,6 +601,8 @@ $ani-delay: 1s;
   border: 3px solid #e79d59;
 }
 
+/*CONSULT*/
+
 .consult-bg {
   background-color: #fdf7f2;
   box-sizing: border-box;
@@ -466,6 +639,8 @@ $ani-delay: 1s;
   right: 30px;
   top: 5px;
 }
+
+/*PSYCOLOGIST*/
 
 .psycologist-block {
   padding: 20px 0 15px;
@@ -505,6 +680,8 @@ $ani-delay: 1s;
   margin: 15px 0;
   color: #402d95;
 }
+
+/*PSYCHOANALYSIS*/
 
 .psychoanalysis {
   text-align: center;
@@ -596,6 +773,8 @@ $ani-delay: 1s;
   padding: 0 10px;
 }
 
+/*PRACTICE*/
+
 .practice {
   text-align: center;
   padding: 15px 0;
@@ -604,6 +783,8 @@ $ani-delay: 1s;
 .practice p {
   text-align: left;
 }
+
+/*MAP & FORM*/
 
 #map {
   width: 100%;
