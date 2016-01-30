@@ -139,7 +139,7 @@ body {
 
 @font-face {
   font-family: 'pushkin_regular';
-  src: url('../fonts/pushkin/Pushkin.ttf') format('truetype');
+  src: url('../fonts/pushkin/Pushkin.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
