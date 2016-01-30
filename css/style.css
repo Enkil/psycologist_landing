@@ -138,8 +138,8 @@ body {
 
 
 @font-face {
-  font-family: 'pushkin_regular';
-  src: url('../fonts/pushkin/Pushkin.otf') format('truetype');
+  font-family: 'pushkin';
+  src: url('../fonts/pushkin/Pushkin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -696,7 +696,7 @@ bottom: 50px;
 }
 
 .psycologist {
-  font-family: 'pushkin_regular', sans-serif;
+  font-family: 'pushkin', sans-serif;
   text-align: center;
   font-size: 22px;
   margin: 15px 0;
@@ -1007,7 +1007,7 @@ bottom: 50px;
   }
 
   .psycologist-block {
-    padding: 35px 0 25px;
+    padding-top: 35px;
   }
 
   .text-block p,
