@@ -388,7 +388,7 @@ input {
 /*PROMO*/
 
 .promo {
-  background-image: url(../img/header_bg.jpg);
+  background-image: url(../img/header_bg_320.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 65%;
@@ -956,6 +956,12 @@ bottom: 50px;
   color: #cf8e53;
 }
 
+@media (min-width: 640px) {
+  .promo {
+    background-image: url(../img/header_bg_768.jpg);
+  }
+}
+
 @media (min-width: 768px) {
 
   .header-contant {
@@ -966,6 +972,10 @@ bottom: 50px;
   .phone-btn {
     padding-top: 0;
     padding-left: 0;
+  }
+
+  .promo {
+    background-image: url(../img/header_bg_768.jpg);
   }
 
   .promo h1 {
@@ -1198,6 +1208,12 @@ bottom: 50px;
   }
 }
 
+@media (min-width: 1000px) {
+    .promo {
+    background-image: url(../img/header_bg.jpg);
+  }
+}
+
 @media (min-width: 1200px) {
 
   .promo h1 {
@@ -1208,6 +1224,7 @@ bottom: 50px;
     font-size: 48px;
     line-height:70px;
   }
+
   .arrow {
     left: calc(49% + 20px);
   }
