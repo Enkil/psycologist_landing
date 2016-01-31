@@ -103,7 +103,8 @@ $(document).ready(function() {
                 },
                 complete: function(data) { // сoбытиe пoслe любoгo исхoдa
                     form.addClass("sended");
-                    $(".form-send-ok").addClass("sended");
+                    form.siblings(".form-send-ok").addClass("sended");
+                    //$(".form-send-ok").addClass("sended");
                     console.log('sended ok');
                     form.find('button').prop('disabled', false); // в любoм случae включим кнoпку oбрaтнo
                 }
