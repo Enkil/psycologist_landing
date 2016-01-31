@@ -36,34 +36,37 @@ window.onload = function(){
     // Google Map
     findMapAndInit('map');
 
+    // Animations
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       300,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+    );
+
+    new WOW().init();
+
+
+
 };
 
-var wow = new WOW(
-  {
-    boxClass:     'wow',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       300,          // distance to the element when triggering the animation (default is 0)
-    mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         true,       // act on asynchronously loaded content (default is true)
-    callback:     function(box) {
-      // the callback is fired every time an animation is started
-      // the argument that is passed in is the DOM node being animated
-    },
-    scrollContainer: null // optional scroll container selector, otherwise use window
-  }
-);
 
-new WOW().init();
 
 var myString = "Психоаналитическая терапия это эффективная, " +
-            " постоянно совершенствующаяся практика позволяющая познать " +
-            "и изменить себя ";
+    " постоянно совершенствующаяся практика позволяющая познать " +
+    "и изменить себя ";
 
 var myArray = myString.split(""),
-        loopTimer,
-        setToday;
+    loopTimer;
 
-setToday = document.getElementById('newTime').outerHTML = "(" + getFormattedDate() + ")";
 
 function frameLooper() {
     if (myArray.length > 0) {
@@ -75,16 +78,3 @@ function frameLooper() {
 }
 
 frameLooper();
-
-function getFormattedDate() {
-  var date = new Date();
-
-  var str = date.getFullYear() + "-" +
-          (date.getMonth() + 1) + "-" +
-          date.getDate() + " " +
-          date.getHours() + ":" +
-          date.getMinutes() + ":" +
-          date.getSeconds();
-
-  return str;
-}

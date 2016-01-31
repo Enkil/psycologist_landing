@@ -139,11 +139,7 @@ body {
 
 @font-face {
   font-family: 'pushkin';
-  src: url('../fonts/pushkin/Pushkin.ttf') format('truetype');
-  src: url('../fonts/pushkin/pushkin-webfont.eot') format('embedded-opentype'),
-    url('../fonts/pushkin/pushkin-webfont.woff2') format('woff2'),
-    url('../fonts/pushkin/pushkin-webfont.woff') format('woff'),
-    url('../fonts/pushkin/pushkin-webfont.svg') format('svg');
+  src: url('../fonts/pushkin/Pushkin.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -408,7 +404,7 @@ bottom: 50px;
 
 .promo h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'kelson_sans_rubold', sans-serif;
   color: #fef5f5;
   text-transform: uppercase;
@@ -1156,7 +1152,7 @@ bottom: 50px;
     line-height:70px;
   }
   .arrow {
-    left: calc(49% + 6px);
+    left: calc(49% + 9px);
   }
 
   .about-title {
