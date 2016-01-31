@@ -16,10 +16,12 @@ $headers = 'From:' . $adminEmail . "\r\n" .
     'Reply-To:' . $adminEmail . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-if  (mail($to, $subject, $message, $headers)) {
-    echo '<br/>' . 'Send';
-} else {
-    echo 'Sending error';
-};
+mail($to, $subject, $message, $headers);
+
+//if  (mail($to, $subject, $message, $headers)) {
+//    echo '<br/>' . 'Send';
+//} else {
+//    echo 'Sending error';
+//};
 
 header("Location: ".$_SERVER['HTTP_REFERER']);
