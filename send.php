@@ -12,7 +12,7 @@ if ($_POST) {
         $timeFrom = htmlspecialchars($_POST["time-from"]);
         $timeTo = htmlspecialchars($_POST["time-to"]);
 
-        $to = 'timohin.i@gmail.com';
+        $to = 'timohin.i@gmail.com,krestina.tatjana@gmail.com';
         $subject = 'Психоанализ в С-Пб - Новая заявка с сайта';
 
         $message = '
