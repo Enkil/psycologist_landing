@@ -835,9 +835,9 @@ bottom: 50px;
 
 .form-send-ok{
     color: #cf8e53;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'latolight', sans-serif;
-    line-height: 9px;
+    line-height: normal;
     display: none;
 }
 
