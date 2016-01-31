@@ -833,6 +833,18 @@ bottom: 50px;
   line-height: 9px;
 }
 
+.form-send-ok{
+    color: #cf8e53;
+    font-size: 16px;
+    font-family: 'latolight', sans-serif;
+    line-height: 9px;
+    display: none;
+}
+
+.form-send-ok.sended{
+    display: block;
+}
+
 .form_contact a {
   text-decoration: none;
   color: #fff;
@@ -857,6 +869,10 @@ bottom: 50px;
 .footer-form {
   text-align: center;
   margin: 0 30px;
+}
+
+.footer-form.sended{
+    display: none;
 }
 
 .form-item_input {
