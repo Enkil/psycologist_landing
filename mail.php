@@ -25,4 +25,3 @@ mail($to, $subject, $message, $headers);
 //};
 
 header("Location: ".$_SERVER['HTTP_REFERER']);
-?>

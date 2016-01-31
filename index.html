@@ -168,10 +168,10 @@
                   <p class="form_contact">Написать: <a href="mailto:krestina.tatjana@gmail.com" title="Психоанализ в Санкт-Петербурге - Написать">krestina.tatjana@gmail.com</a></p>
                   <p class="form_text">Так же Вы можете оставить свои контактные данные. Психоаналитик перезвонит Вам.</p>
 
-                  <form action="mail.php" method="post" class="footer-form">
+                  <form action="send.php" method="post" class="footer-form" id="ajaxform">
                     <div class="form-data" >
-                      <p class="form-item">Имя<input type="text" class="form-item_input" name="name" required></p>
-                      <p class="form-item">Телефон<input type="tel" class="form-item_input" name="phone" required></p>
+                      <p class="form-item">Имя<input type="text" class="form-item_input" name="name" ></p>
+                      <p class="form-item">Телефон<input type="tel" class="form-item_input" name="phone" ></p>
                       <p class="form-item">Удобное время для звонка с
                         <input type="text" class="form-item_input-time" placeholder="00:00" name="time-from"> до
                         <input type="text" class="form-item_input-time" placeholder="00:00" name="time-to"></p>
@@ -188,6 +188,7 @@
     </main>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD25UDWOF4MDXi8vOQ4-jWMz-L49e_Amg4&language=ru"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
 

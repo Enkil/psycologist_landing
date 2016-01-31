@@ -869,6 +869,10 @@ bottom: 50px;
   outline: none;
 }
 
+.form-item_input.error{
+    border: 1px solid red;
+}
+
 .form-item_input:focus,
 .form-item_input-time:focus {
   border: 1px solid #e79d59;
@@ -880,6 +884,10 @@ bottom: 50px;
   width: 55px;
   height: 25px;
   outline: none;
+}
+
+.form-item_input-time.error{
+    border: 1px solid red;
 }
 
 ::-webkit-input-placeholder {
