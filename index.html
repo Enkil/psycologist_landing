@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Психоанализ в Санкт-Петербурге</title>
       <meta name='viewport' content='width=device-width, user-scalable=yes'>
-    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -48,7 +47,7 @@
 
         <!-- PROMO -->
       <div class="promo">
-        <h1 class="wow bounceInLeft animated" data-wow-offset="100" style="visibility: visible; animation-name: bounceInLeft";>психоанализ</h1>
+        <h1 class="wow bounceInLeft animated" data-wow-offset="100" style="visibility: visible; animation-name: bounceInLeft;">психоанализ</h1>
         <p class="wow bounceInLeft animated" data-wow-offset="100" style="visibility: visible; animation-name: bounceInLeft">в<br>Санкт-Петербурге</p>
         <a href="#form" class="promo-btn" title="Записаться на прием">Записаться на прием</a>
         <a href="#form">
@@ -58,10 +57,10 @@
       </div>
 
       <!-- ABOUT -->
-      <article class="about">
-        <h2 class="about-title">
+      <div class="about">
+        <div class="about-title">
           <div id="myTypingText"></div>
-        </h2>
+        </div>
         <p class="about-text">Психоаналитическая практика позволяет получить ответы на следующие и многие другие вопросы:</p>
         <ul class="features">
           <li class="features-item">Почему я такой какой я есть?</li>
@@ -73,7 +72,7 @@
           <li class="features-item">Какое значение в моей сегодняшней жизни имеет опыт взаимоотношения с родителями? </li>
         </ul>
         <a href="#form" class="ask-question" title="Задать вопрос психоаналитику">Задать вопрос психоаналитику</a>
-      </article>
+      </div>
 
       <!-- CONSULTATION -->
       <div class="consult-bg">
@@ -96,7 +95,7 @@
       <div class="psycologist-block">
           <div class="container">
             <div class="row">
-              <div class="col-xs-5 psycologist-photo wow bounceInLeft animated" data-wow-offset="100" style="visibility: visible; animation-name: bounceInLeft";>
+              <div class="col-xs-5 psycologist-photo wow bounceInLeft animated" data-wow-offset="100" style="visibility: visible; animation-name: bounceInLeft;">
                 <img src="img/photo.jpg" alt="Психоаналитик">
               </div>
               <div class="col-xs-12 col-sm-7 text-block">
@@ -155,11 +154,11 @@
       </div>
 
       <!-- MAP & FORM -->
-      <section class="contacts">
+      <div class="contacts">
 
         <div id="map"></div>
 
-        <div class="form wow bounceInLeft animated" data-wow-offset="10" style="visibility: visible; animation-name: bounceInLeft"; id="form">
+        <div class="form wow bounceInLeft animated" data-wow-offset="10" style="visibility: visible; animation-name: bounceInLeft;" id="form">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -169,26 +168,29 @@
                   <p class="form_contact">Написать: <a href="mailto:krestina.tatjana@gmail.com" title="Психоанализ в Санкт-Петербурге - Написать">krestina.tatjana@gmail.com</a></p>
                   <p class="form_text">Так же Вы можете оставить свои контактные данные. Психоаналитик перезвонит Вам.</p>
 
-                  <form action="mail.php" method="post" class="footer-form">
+                  <form action="send.php" method="post" class="footer-form" id="ajaxform">
                     <div class="form-data" >
-                      <p class="form-item">Имя<input type="text" class="form-item_input" name="name"></p>
-                      <p class="form-item">Телефон<input type="tel" class="form-item_input" name="phone"></p>
+                      <p class="form-item">Имя<input type="text" class="form-item_input" name="name" ></p>
+                      <p class="form-item">Телефон<input type="tel" class="form-item_input" name="phone" ></p>
                       <p class="form-item">Удобное время для звонка с
                         <input type="text" class="form-item_input-time" placeholder="00:00" name="time-from"> до
                         <input type="text" class="form-item_input-time" placeholder="00:00" name="time-to"></p>
                     </div>
                     <button class="form-btn" title="Отправить заявку">Отправить заявку</button>
                   </form>
+
+                    <p class="form-send-ok"> Сообщение отправлено. Вам перезвонят в ближайшее время. Спасибо! </p>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </div>
     </main>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD25UDWOF4MDXi8vOQ4-jWMz-L49e_Amg4&language=ru"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
 
