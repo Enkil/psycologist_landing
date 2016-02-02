@@ -7,6 +7,7 @@ $(document).ready(function() {
             zoom: 15,
             center: myLatlng,
             scrollwheel: false,
+            draggable: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
@@ -15,12 +16,13 @@ $(document).ready(function() {
         var marker = new google.maps.Marker({ // Init marker
             position: myLatlng,
             map: map,
-            title:"Networks in the Global World",
+            title:"Психоанализ в Санкт-Петербурге",
             icon: image
         });
 
         var map = new google.maps.Map(mapIDCurrent, myOptions); // Init map
         marker.setMap(map);
+        map.setOptions({'scrollwheel': false});
     }
 
     function findMapAndInit(mapID) {
