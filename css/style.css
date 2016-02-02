@@ -391,8 +391,7 @@ input {
   background-image: url(../img/header_bg_320.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 65%;
-  background-position-x: 50%;
+    background-position: 65% 50%;
   text-align: center;
   vertical-align: middle;
   min-height: 580px;
@@ -841,10 +840,6 @@ input {
   height: 480px;
 }
 
-.form {
-  width: 100%;
-  top: 15px;
-}
 
 .order_form {
   background-color: #222;
@@ -1079,6 +1074,10 @@ input {
     padding-top: 50px;
   }
 
+    .psycologist-photo img{
+        max-width: 100%;
+    }
+
   .psycologist-block {
     padding-top: 35px;
   }
@@ -1161,7 +1160,7 @@ input {
 
   #map {
     width: 80%;
-    height: 530px;
+    height: 630px;
     float: right;
     z-index: 1;
     position: relative;
@@ -1189,7 +1188,11 @@ input {
   }
 
   .order_form {
-    padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      padding: 30px 30px;
+      max-width: 450px;
   }
 
   .order_form img {
@@ -1296,7 +1299,8 @@ input {
   }
 
   .order_form {
-    padding: 60px 16.667%;
+    padding: 60px 90px;
+      max-width: 550px;
   }
 
   .form-item_input-time{
