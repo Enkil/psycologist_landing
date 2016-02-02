@@ -6,7 +6,6 @@ $(document).ready(function() {
         var myOptions = { // Map settings
             zoom: 15,
             center: myLatlng,
-            scaleControl: false,
             scrollwheel: false,
             draggable: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP

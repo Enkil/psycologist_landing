@@ -840,10 +840,6 @@ input {
   height: 480px;
 }
 
-.form {
-  width: 100%;
-  top: 15px;
-}
 
 .order_form {
   background-color: #222;
@@ -1164,7 +1160,7 @@ input {
 
   #map {
     width: 80%;
-    height: 530px;
+    height: 630px;
     float: right;
     z-index: 1;
     position: relative;
@@ -1192,7 +1188,11 @@ input {
   }
 
   .order_form {
-    padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      padding: 30px 30px;
+      max-width: 450px;
   }
 
   .order_form img {
@@ -1299,7 +1299,8 @@ input {
   }
 
   .order_form {
-    padding: 60px 16.667%;
+    padding: 60px 90px;
+      max-width: 550px;
   }
 
   .form-item_input-time{
