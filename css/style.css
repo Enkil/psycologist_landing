@@ -391,8 +391,7 @@ input {
   background-image: url(../img/header_bg_320.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 65%;
-  background-position-x: 50%;
+    background-position: 65% 50%;
   text-align: center;
   vertical-align: middle;
   min-height: 580px;
@@ -1078,6 +1077,10 @@ input {
     text-align: center;
     padding-top: 50px;
   }
+
+    .psycologist-photo img{
+        max-width: 100%;
+    }
 
   .psycologist-block {
     padding-top: 35px;
